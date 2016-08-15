@@ -1,5 +1,8 @@
 $(function() {
   $("#blanks form").submit(function(event) {
+
+    event.preventDefault();
+
     var person1Input = $("input#person1").val();
     var person2Input = $("input#person2").val();
     var animalInput= $("input#animal").val();
@@ -16,6 +19,5 @@ $(function() {
 
     $("#story").show();
 
-    event.preventDefault();
   });
 });
